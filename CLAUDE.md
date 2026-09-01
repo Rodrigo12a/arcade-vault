@@ -24,6 +24,9 @@ No test runner is configured yet — `package.json` has no `test` script and no 
 - **Tailwind v4, CSS-first.** There is no `tailwind.config.*`. Theme tokens are declared in `app/globals.css` via `@import "tailwindcss"` + `@theme inline { ... }`, wired through PostCSS (`@tailwindcss/postcss`). Add design tokens there, not in a JS config.
 - Path alias `@/*` maps to the repo root.
 
+## Skills
+Use always /frontend-design for desgin interface user.
+
 ## Project state and where the design lives
 
 `app/` is still the unmodified `create-next-app` scaffold (`page.tsx` is the starter template, `layout.tsx` metadata says "Create Next App"). The actual product — a retro-arcade portal where players play browser games and compete for high scores — exists only as a **static prototype** in `references/resources/resources/templates/`. Treat it as the design spec to port, not as code to import.
